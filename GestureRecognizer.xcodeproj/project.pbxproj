@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5AA09302104DE660025D33F /* PanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AA092F2104DE660025D33F /* PanGesture.swift */; };
 		C5CBBBAA2104C07E0065ECCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBBBA92104C07E0065ECCA /* AppDelegate.swift */; };
-		C5CBBBAC2104C07E0065ECCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBBBAB2104C07E0065ECCA /* ViewController.swift */; };
+		C5CBBBAC2104C07E0065ECCA /* SwipeGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBBBAB2104C07E0065ECCA /* SwipeGesture.swift */; };
 		C5CBBBAF2104C07E0065ECCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CBBBAD2104C07E0065ECCA /* Main.storyboard */; };
 		C5CBBBB12104C0820065ECCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5CBBBB02104C0820065ECCA /* Assets.xcassets */; };
 		C5CBBBB42104C0820065ECCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CBBBB22104C0820065ECCA /* LaunchScreen.storyboard */; };
+		C5CBBBBC2104C2000065ECCA /* PinchGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBBBBB2104C2000065ECCA /* PinchGesture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C5AA092F2104DE660025D33F /* PanGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGesture.swift; sourceTree = "<group>"; };
 		C5CBBBA62104C07E0065ECCA /* GestureRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestureRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5CBBBA92104C07E0065ECCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C5CBBBAB2104C07E0065ECCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5CBBBAB2104C07E0065ECCA /* SwipeGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGesture.swift; sourceTree = "<group>"; };
 		C5CBBBAE2104C07E0065ECCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5CBBBB02104C0820065ECCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5CBBBB32104C0820065ECCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5CBBBB52104C0820065ECCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5CBBBBB2104C2000065ECCA /* PinchGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchGesture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				C5CBBBA92104C07E0065ECCA /* AppDelegate.swift */,
-				C5CBBBAB2104C07E0065ECCA /* ViewController.swift */,
+				C5CBBBAB2104C07E0065ECCA /* SwipeGesture.swift */,
+				C5CBBBBB2104C2000065ECCA /* PinchGesture.swift */,
+				C5AA092F2104DE660025D33F /* PanGesture.swift */,
 				C5CBBBAD2104C07E0065ECCA /* Main.storyboard */,
 				C5CBBBB02104C0820065ECCA /* Assets.xcassets */,
 				C5CBBBB22104C0820065ECCA /* LaunchScreen.storyboard */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5CBBBAC2104C07E0065ECCA /* ViewController.swift in Sources */,
+				C5CBBBAC2104C07E0065ECCA /* SwipeGesture.swift in Sources */,
+				C5AA09302104DE660025D33F /* PanGesture.swift in Sources */,
 				C5CBBBAA2104C07E0065ECCA /* AppDelegate.swift in Sources */,
+				C5CBBBBC2104C2000065ECCA /* PinchGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +291,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7AHFT447W;
 				INFOPLIST_FILE = GestureRecognizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7AHFT447W;
 				INFOPLIST_FILE = GestureRecognizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
